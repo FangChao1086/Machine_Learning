@@ -14,7 +14,7 @@ TF-IDF:一种统计方法，用以评估某一字词对于一个文件集或一�
 
 <span id="Word2vec"></span>
 ## Word2vec
-[参考链接:通俗理解word2vec](https://www.jianshu.com/p/471d9bfbd72f)
+[参考链接:通俗理解word2vec](https://www.jianshu.com/p/471d9bfbd72f)  
 ![Word2vec](https://i.ibb.co/6WTHcdT/Word2vec.png)
 * Continuous Bag of Words  
 输入:某一个特征词的**上下文**相关的词对应的词向量  
