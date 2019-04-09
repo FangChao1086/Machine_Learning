@@ -15,8 +15,8 @@ TF-IDF:一种统计方法，用以评估某一字词对于一个文件集或一�
 <span id="Word2vec"></span>
 ## Word2vec
 [参考链接:通俗理解word2vec](https://www.jianshu.com/p/471d9bfbd72f)  
-![Word2vec](https://i.ibb.co/6WTHcdT/Word2vec.png)
 * Continuous Bag of Words  
+![CBOW](https://i.ibb.co/WWtHKpr/CBOW.png)
 输入:某一个特征词的**上下文**相关的词对应的词向量  
 输出:这一个**特定词**的词向量  
 适用于小型数据库
@@ -26,6 +26,7 @@ TF-IDF:一种统计方法，用以评估某一字词对于一个文件集或一�
   * 我们训练神经网络，最后编码的隐藏层输出表示一个特定的词嵌入。
 
 * Skip-Gram  
+![Skip-Gram ](https://i.ibb.co/5xNhS5g/Skip-Gram.png)
 输入：**特定词**的词向量  
 输出：特定词对应的**上下文**词向量  
 适用于大型语料
