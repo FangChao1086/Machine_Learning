@@ -140,6 +140,7 @@ TF-IDF:一种统计方法，用以评估某一字词对于一个文件集或一�
 <span id="jieba分词"></span>
 ## jieba分词
 [参考链接：对Python中文分词模块结巴分词算法过程的理解和分析](https://blog.csdn.net/rav009/article/details/12196623)
+[参考链接：结巴分词原理介绍](https://blog.csdn.net/baidu_33718858/article/details/81073093)
 
 ### 结巴分词用到的算法
 * 基于**Trie树**结构实现高效的词图扫描，生成句子中汉字所有可能成词情况所构成的**有向无环图（DAG)**
