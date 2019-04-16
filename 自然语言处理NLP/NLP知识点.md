@@ -10,6 +10,7 @@
 * [文本分析](#文本分析)
   * [词性标注](#词性标注)
 * [jieba分词](#jieba分词)
+* [Seq2Seq](#Seq2Seq)
 * [实现多轮对话](#实现多轮对话)
 
 <span id="词袋模型"></span>
@@ -172,6 +173,10 @@ jieba分词综合了基于字符串匹配的算法和基于统计的算法
 > 对于新词，也就是dict.txt中没有的词语，我们通过统计方法来处理，jieba中采用了HMM隐马尔科夫模型来处理。
 7. 返回分词结果  
 > 通过yield将上面步骤中切分好的词语逐个返回。yield相对于list，可以节约存储空间。
+
+<span id="Seq2Seq"></span>
+## Seq2Seq
+[参考链接：Seq2Seq](https://blog.csdn.net/dcrmg/article/details/80327069)
 
 <span id="实现多轮对话"></span>
 ## 实现多轮对话
