@@ -3,6 +3,7 @@
 * [TF-IDF](#TF-IDF)
 * [Word2vec](#Word2vec)
 * [TextRank关键词提取](#TextRank关键词提取)
+  * [PageRank](#PageRank)
 * [LDA模型](#LDA模型)
 * [余弦相似度算法计算文本相似度 ](#余弦相似度算法计算文本相似度)
 * [simhash](#simhash)
@@ -47,6 +48,12 @@ TF-IDF:一种统计方法，用以评估某一字词对于一个文件集或一�
 
 <span id="TextRank关键词提取"></span>
 ## TextRank关键词提取
+<span id="TextRank关键词提取"></span>
+### PageRank
+[参考链接：PageRank的原理](https://blog.csdn.net/ten_sory/article/details/80927738)
+* 初始时每个页面具有通向的PageRank值，更新计算，得到页面新的PageRank值  
+
+**TextRank关键词提取**  
 * 如果一个单词出现在很多单词后面的话，那么说明这个单词比较重要
 * 一个TextRank值很高的单词后面跟着的一个单词，那么这个单词的TextRank值会相应地因此而提高
   * TextRank中一个单词i的权重取决于与**在i前面的各个点j组成的(i,j)这条边的权重**，以及**j这个点到其他边的权重之和**。
