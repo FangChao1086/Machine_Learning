@@ -1,6 +1,6 @@
+from sklearn.datasets import load_boston
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingRegressor
-from sklearn.datasets import load_boston
 from sklearn.metrics import mean_squared_error
 
 x_train, x_test, y_train, y_test = train_test_split(load_boston().data, load_boston().target,
