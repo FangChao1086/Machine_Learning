@@ -9,5 +9,7 @@
   * [深度学习知识点](https://github.com/FangChao1086/Machine_learning/blob/master/深度学习/深度学习知识点.md)
 * [数据挖掘](https://github.com/FangChao1086/Machine_learning/tree/master/数据挖掘)
   * [数据挖掘知识点](https://github.com/FangChao1086/Machine_learning/blob/master/数据挖掘/数据挖掘知识点.md)
+* [计算机视觉](https://github.com/FangChao1086/Machine_learning/tree/master/计算机视觉)
+  * [计算机视觉实践](https://github.com/FangChao1086/Machine_learning/blob/master/计算机视觉/计算机视觉实践.md)
 * [自然语言处理](https://github.com/FangChao1086/Machine_learning/tree/master/自然语言处理NLP)
   * [NLP知识点](https://github.com/FangChao1086/Machine_learning/blob/master/自然语言处理NLP/NLP知识点.md)
