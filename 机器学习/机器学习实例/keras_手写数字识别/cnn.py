@@ -33,7 +33,7 @@ label = label[index]
 (y_train, y_val) = (label[0:30000], label[30000:])
 
 
-def create_model():
+def create_model(lr=0.01, decay=1e-6, momentum=0.9):
     model = Sequential()
 
     model.add(Conv2D(filters=4, kernel_size=(5, 5), strides=(1, 1),
@@ -53,13 +53,13 @@ def create_model():
 
     model.add(Dense(units=nb_class, activation='softmax'))  # (None, nb_class)
 
+    sgd = SGD(lr=lr, decay=decay, momentum=momentum, nesterov=True)  # 优化方法
+    model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     return model
 
 
 # 模型
 model = create_model()
-sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)  # 优化方法
-model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 early_stopping = EarlyStopping(monitor='val_loss',
                                patience=1)  # early stopping 返回最佳epoch对应的model# early stopping 返回最佳epoch对应的model
 model.fit(x_train, y_train, batch_size=100, validation_data=(x_val, y_val), nb_epoch=5, callbacks=[early_stopping])
