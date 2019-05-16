@@ -211,5 +211,5 @@ if __name__ == '__main__':
             plt.scatter(cents[i, 0], cents[i, 1], marker='o', color=colors[i], linewidths=12, zorder=2)
         plt.title("SSE={:.2f}".format(sse))
         plt.axis([-30, 30, -30, 30])
-        plt.savefig('%d.png' % (max_iter+1))
+        plt.savefig('%d.png' % (max_iter + 1))
     plt.show()
