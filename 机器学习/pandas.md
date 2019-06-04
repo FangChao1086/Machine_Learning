@@ -27,8 +27,9 @@ for x in train.columns:
 <!-- <span id="文件读取"></span> -->
 ## 文件读取
 * pd.read_csv
-  * head=0：从第0行读取
-  * keep_default_na=false：空值变成null
+  * head = 0：从第0行读取
+  * keep_default_na = false：空值变成null
+  * parse_dates = ['Date_received']：将Date_received下的日期`20160528`转换成`2016-05-28`格式
 
 ## 聚合  
 * .agg
