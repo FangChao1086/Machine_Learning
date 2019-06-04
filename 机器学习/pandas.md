@@ -1,11 +1,12 @@
 # pandas
+[链接：速查表_pandas](https://github.com/FangChao1086/machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%80%9F%E6%9F%A5%E8%A1%A8/Pandas)  
+[参考链接：pandas加速-Modin](https://mp.weixin.qq.com/s/zLMa-fkvErXpQLWjcQbUzg)   
+
+* [文件读取](#文件读取)
 * [聚合](#聚合)
 * [时间处理](#时间处理)
 
-[链接：速查表_pandas](https://github.com/FangChao1086/machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%80%9F%E6%9F%A5%E8%A1%A8/Pandas)  
-[参考链接：pandas加速-Modin](https://mp.weixin.qq.com/s/zLMa-fkvErXpQLWjcQbUzg)   
-<span id="pandas编码objects_type"></span>
-### pandas编码objects type
+## pandas编码objects type
 ```python
 # 编码所有的object type
 from sklearn import preprocessing
@@ -23,6 +24,12 @@ for x in train.columns:
   data['A'].value_counts()
   ```
   
+<!-- <span id="文件读取"></span> -->
+## 文件读取
+* pd.read_csv
+  * head=0：从第0行读取
+  * keep_default_na=false：空值变成null
+
 ## 聚合  
 * .agg
 ```python
@@ -58,7 +65,7 @@ print(t1)
 '''
 ```
 
-<span id="时间处理"></span>
+<!-- <span id="时间处理"></span> -->
 ## 时间处理
 * pd.to_datetime
 * pd.Timedelta
