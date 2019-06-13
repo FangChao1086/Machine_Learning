@@ -186,6 +186,9 @@ jieba分词综合了基于字符串匹配的算法和基于统计的算法
 <span id="Seq2Seq"></span>
 ## Seq2Seq
 [参考链接：Seq2Seq](https://blog.csdn.net/dcrmg/article/details/80327069)
+* Seq2seq属于encoder-decoder结构的一种,利用两个RNN,一个作为encoder一个作为decoder。
+* Encoder负责将输入序列压缩成指定长度的向量,这个向量可以看作这段序列的语义
+* decoder负责根据语义向量生成指定的序列
 
 <span id="实现多轮对话"></span>
 ## 实现多轮对话
