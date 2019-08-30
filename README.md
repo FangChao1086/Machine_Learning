@@ -1,5 +1,8 @@
-# Machine_learning
+# machine_learning
 
+## 数据集
+* [参考连接：MNIST](http://yann.lecun.com/exdb/mnist/)  
+##
 * [机器学习](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习)
   * [机器学习知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习知识点.md)
   * [机器学习算法](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习算法.md)
