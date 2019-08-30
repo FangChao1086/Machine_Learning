@@ -98,13 +98,14 @@ def create_model(lr=0.01, decay=1e-6, momentum=0.9):
     return model
 ```
 ### 模型存储、加载、查看、网络可视化
+* [参考链接：模型的存储与加载](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model)  
 ```python
 import keras
 from keras.utils.vis_utils import plot_model
 
 # 模型存储、加载、网络可视化
-model.save('model.h5')
-origin_model = keras.models.load_model('model.h5')  # 模型加载
+model.save('model.h5')  # 存整个模型（包括结构、权重与训练配置）
+origin_model = keras.models.load_model('model.h5')  # 加载整个模型
 print(origin_model.summary())  # 查看模型
 plot_model(origin_model, to_file='model.png')  # 神经网络可视化
 ```
