@@ -1,4 +1,4 @@
-# 深度学习知识点
+## B_A、深度学习知识点
 * [BatchNormalization](#BatchNormalization)
 * [梯度消失与梯度爆炸](#梯度消失与梯度爆炸)
 * [反向传播(BP)](#反向传播(BP))
