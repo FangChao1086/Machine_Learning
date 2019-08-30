@@ -62,8 +62,7 @@ dnn = DNN(input_ph, [400, 200, 100])
 
 ## Keras
 * [参考链接：Documentation](https://keras.io/)
-* [参考链接：Example_github](https://github.com/fchollet/keras/tree/master/exa
-mples)
+* [参考链接：Example_github](https://github.com/fchollet/keras/tree/master/examples)
   * [链接：keras_手写数字识别](https://github.com/FangChao1086/machine_learning/tree/master/A、机器学习/机器学习实例/keras_手写数字识别)  
 ### 网络建模
 ```python
