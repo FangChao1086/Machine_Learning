@@ -3,6 +3,7 @@
 * [参考链接：各种数据集下载](https://mp.weixin.qq.com/s/mq2aCU91zcTe-lkPTiAF2g)
 * [tensorflow](#tensorflow)
 * [优化算法](#优化算法)
+* [Keras](#Keras)
 
 ## tensorflow
 [链接：tensorflow基础](https://github.com/FangChao1086/machine_learning/tree/master/深度学习/tensorflow/Tensorflow基础.ipynb)  
@@ -58,3 +59,56 @@ dnn = DNN(input_ph, [400, 200, 100])
   * [链接：Adadelta](https://github.com/FangChao1086/machine_learning/blob/master/深度学习/tensorflow/Adadelta.ipynb)
 * Adam
   * [链接：Adam](https://github.com/FangChao1086/machine_learning/blob/master/深度学习/tensorflow/Adam.ipynb)
+
+## Keras
+* [参考链接：Documentation](https://keras.io/)
+* [参考链接：Example_github](https://github.com/fchollet/keras/tree/master/exa
+mples)
+  * [链接：keras_手写数字识别](https://github.com/FangChao1086/machine_learning/tree/master/A、机器学习/机器学习实例/keras_手写数字识别)  
+### 网络建模
+```python
+from keras.models import Sequential
+from keras.layers import MaxPooling2D, Conv2D
+from keras.layers.core import Flatten, Dense, Activation
+from keras.optimizers import SGD
+
+def create_model(lr=0.01, decay=1e-6, momentum=0.9):
+    model = Sequential()
+
+    model.add(Conv2D(filters=4, kernel_size=(5, 5), strides=(1, 1),
+                     padding='valid', activation='relu', input_shape=(1, 28, 28)))  # (None, 4, 24, 24)
+
+    model.add(Conv2D(filters=8, kernel_size=(3, 3), strides=(1, 1),
+                     activation='relu', padding='valid'))  # (None, 8, 22, 22)
+    model.add(MaxPooling2D(pool_size=(2, 2)))  # (None, 8, 11, 11)
+
+    model.add(Conv2D(filters=16, kernel_size=(3, 3), strides=(1, 1),
+                     activation='relu', padding='valid'))  # (None, 16, 9, 9)
+    model.add(MaxPooling2D(pool_size=(2, 2)))  # (None, 16, 4, 4)
+
+    model.add(Flatten())  # (None, 256)
+    model.add(Dense(units=128))  # (None, 128)
+    model.add(Activation('relu'))
+
+    model.add(Dense(units=nb_class, activation='softmax'))  # (None, nb_class)
+
+    sgd = SGD(lr=lr, decay=decay, momentum=momentum, nesterov=True)  # 优化方法
+    model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+    return model
+```
+### 模型存储、加载、查看、网络可视化
+```python
+import keras
+from keras.utils.vis_utils import plot_model
+
+# 模型存储、加载、网络可视化
+model.save('model.h5')
+origin_model = keras.models.load_model('model.h5')  # 模型加载
+print(origin_model.summary())  # 查看模型
+plot_model(origin_model, to_file='model.png')  # 神经网络可视化
+```
+### 模型预测
+```python
+# 预测类别_非one_hot
+predict_test = model.predict_classes(x_test, verbose=0)  # (40,)
+```
