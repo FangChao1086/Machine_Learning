@@ -12,7 +12,7 @@
   * 训练集：0：30000； 测试集：30000：42000
     * 由于有shuffle数据的存在，每次训练会产生一定的误差  
   * 模型网络  
-  ![plot_model](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实例/keras_手写数字识别/model.png)  
+  ![plot_model](https://github.com/FangChao1086/Machine_learning/blob/master/B、深度学习/深度学习实例/keras_手写数字识别/model.png)  
 * cnn_svm.py
   * **使用cnn提取特征，svm训练**；目前效果比SVM不佳，是个问题，待解决
     ```python
@@ -24,6 +24,6 @@
     ```
 * get_feature_layer.py
   * layer1，可视化每个不同kernel输出的图片特征
-  ![layer1](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实例/keras_手写数字识别/layer1.png)  
+  ![layer1](https://github.com/FangChao1086/Machine_learning/blob/master/B、深度学习/深度学习实例/keras_手写数字识别/layer1.png)  
   * layer_last，最后一层  
-  ![layer_last](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实例/keras_手写数字识别/layer_last.png)
+  ![layer_last](https://github.com/FangChao1086/Machine_learning/blob/master/B、深度学习/深度学习实例/keras_手写数字识别/layer_last.png)
