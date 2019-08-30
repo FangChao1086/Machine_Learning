@@ -64,6 +64,8 @@ dnn = DNN(input_ph, [400, 200, 100])
 * [参考链接：Documentation](https://keras.io/)
 * [参考链接：Example_github](https://github.com/fchollet/keras/tree/master/examples)
   * [链接：keras_手写数字识别](https://github.com/FangChao1086/machine_learning/tree/master/B、深度学习/深度学习实例/keras_手写数字识别)  
+### 内置数据集加载
+* [参考链接：内置数据集加载](https://keras.io/datasets/)  
 ### 网络建模
 ```python
 from keras.models import Sequential
