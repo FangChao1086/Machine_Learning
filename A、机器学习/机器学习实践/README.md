@@ -15,12 +15,6 @@
 * [Decision_Tree](#Decision_Tree)
 * [RandomForest](#RandomForest)
 * [GBDT](#GBDT)
-  * [回归](#回归_GBDT)
-    * [GradientBoostingRegressor](#GradientBoostingRegressor)
-    * [GradientBoostingRegressor--GridSearchCV](#GradientBoostingRegressor--GridSearchCV)
-  * [分类](#分类_GBDT)
-    * [GradientBoostingClassifier](#GradientBoostingClassifier)  
-<span id="re_XGBoost"></span>  
 * [XGBoost](#XGBoost)
 * [GBDT(梯度提升树简易教程)](#GBDT(梯度提升树简易教程))
 * [聚类](#聚类)
@@ -225,12 +219,10 @@ print('The accuracy of Random Forest is {}'.format(acc))
 ```
 
 <span id="GBDT"></span>
-## GBDT
-[链接：详细代码](https://github.com/FangChao1086/Machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/GBDT/READ.md)  
-<span id="回归_GBDT"></span>
-## 回归
-<span id="GradientBoostingRegressor"></span>
-### GradientBoostingRegressor
+## [GBDT](#re_)
+[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/GBDT)  
+### 回归
+#### GradientBoostingRegressor
 ```python
 from sklearn.datasets import load_boston
 from sklearn.model_selection import train_test_split
@@ -258,8 +250,7 @@ prediction_test = reg_model.predict(x_test)
 mse_test = mean_squared_error(y_test, prediction_test)
 print("mse_train:%f  mse_test:%f " % (mse_train, mse_test))
 ```
-<span id="GradientBoostingRegressor--GridSearchCV"></span>
-## GradientBoostingRegressor--GridSearchCV
+#### GradientBoostingRegressor--GridSearchCV
 ```python
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -303,11 +294,8 @@ prediction_test = clf.predict(x_test)
 mse_test = mean_squared_error(prediction_test, y_test)
 print('GridSearchCV_mse_test = %f' % mse_test)
 ```
-
-<span id="分类_GBDT"></span>
-## 分类
-<span id="GradientBoostingClassifier"></span>
-### GradientBoostingClassifier
+### 分类
+#### GradientBoostingClassifier
 ```python
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -337,8 +325,8 @@ print("Confusion_matrix\n train:\n%s\ntest:\n%s" % (cm_train, cm_test))
 ```
 
 <span id="XGBoost"></span>  
-## [XGBoost](#re_XGBoost)
-[链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/XGBOOST)
+## [XGBoost](#re_X)
+[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/XGBOOST)
 ```python
 import xgboost as xgb
 
