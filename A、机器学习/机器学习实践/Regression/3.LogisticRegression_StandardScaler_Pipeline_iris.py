@@ -11,9 +11,9 @@ from sklearn.pipeline import Pipeline
 
 
 if __name__ == "__main__":
-    path = '10.iris.data'  # 数据文件路径
+    path = 'DATASET_iris.data'  # 数据文件路径
 
-    data = pd.read_csv('10.iris.data', header=None)
+    data = pd.read_csv('DATASET_iris.data', header=None)
     iris_types = data[4].unique()
     for i, type in enumerate(iris_types):
         data.set_value(data[4] == type, 4, i)

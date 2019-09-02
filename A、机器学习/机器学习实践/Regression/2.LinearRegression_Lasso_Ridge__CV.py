@@ -11,7 +11,7 @@ from sklearn.model_selection import GridSearchCV
 
 if __name__ == "__main__":
     # pandas读入
-    data = pd.read_csv('10.Advertising.csv')    # TV、Radio、Newspaper、Sales
+    data = pd.read_csv('DATASET_advertising.csv')    # TV、Radio、Newspaper、Sales
     x = data[['TV', 'Radio', 'Newspaper']]
     y = data['Sales']
     print(x)

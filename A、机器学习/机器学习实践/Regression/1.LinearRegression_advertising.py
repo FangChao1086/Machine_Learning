@@ -9,7 +9,7 @@ from sklearn.linear_model import LinearRegression
 
 
 if __name__ == "__main__":
-    path = '10.Advertising.csv'
+    path = 'DATASET_advertising.csv'
 
     # pandas读入
     data = pd.read_csv(path)    # TV、Radio、Newspaper、Sales
