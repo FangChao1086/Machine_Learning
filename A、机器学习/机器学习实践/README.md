@@ -15,8 +15,7 @@
 * [RandomForest](#RandomForest)
 * [GBDT](#GBDT)
 * [XGBOOST](#XGBOOST)
-* [聚类](#聚类)
-  * [KMeans_二分KMeans](#KMeans_二分KMeans)
+* [KMeans](#KMeans)
 * [PCA](#PCA)
 * [交叉验证](#交叉验证)
 * [链接：pandas](https://github.com/FangChao1086/machine_learning/blob/master/机器学习/pandas.md)
@@ -351,12 +350,10 @@ bst = xgb.train(param, data_train, num_boost_round=4, evals=watch_list)
 y_hat = bst.predict(data_test)
 ```
 
-<span id="聚类"></span>
-## 聚类
-<span id="KMeans_二分KMeans"></span>
-## KMeans_二分KMeans
-[链接：KMeans知识点](https://github.com/FangChao1086/Machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95.md#k_means)  
-[链接：KMeans代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/Kmeans)  
+<span id="KMeans"></span>
+## [KMeans](#re_)
+[链接：KMeans知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#k_means)  
+[链接：KMeans代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Kmeans)  
 
 <span id="PCA"></span>
 ## PCA
