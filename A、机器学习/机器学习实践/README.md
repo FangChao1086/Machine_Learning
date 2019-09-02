@@ -356,8 +356,8 @@ y_hat = bst.predict(data_test)
 [链接：KMeans代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Kmeans)  
 
 <span id="PCA"></span>
-## PCA
-[链接：PCA知识点](https://github.com/FangChao1086/Machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9.md#PCA)
+## [PCA](#re_)
+[链接：PCA知识点](https://github.com/FangChao1086/Machine_learning/blob/master/通用知识点.md#PCA)
 ```python
 '''
 author:fangchao
@@ -429,7 +429,7 @@ if __name__ == '__main__':
 
 <span id="交叉验证"></span>
 ## 交叉验证
-[链接：交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9F%A5%E8%AF%86%E7%82%B9.md#%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81)  
+[链接：交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/通用知识点.md#交叉验证)  
 [链接：k_fold代码](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81/k_fold.py)  
 [链接：leave_one_out, leave_p_out代码](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81/leave_p_out.py)  
 
