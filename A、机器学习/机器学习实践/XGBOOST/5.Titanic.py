@@ -113,7 +113,7 @@ def write_result(c, c_type):
 
 
 if __name__ == "__main__":
-    x, y = load_data('14.Titanic.train.csv', True)
+    x, y = load_data('DATASET_Titanic.train.csv', True)
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.5, random_state=1)
     #
     # lr = LogisticRegression(penalty='l2')

@@ -23,8 +23,8 @@ def error_rate(y_hat, y):
 
 if __name__ == "__main__":
     # 读取数据
-    data_train = xgb.DMatrix('14.agaricus_train.txt')
-    data_test = xgb.DMatrix('14.agaricus_test.txt')
+    data_train = xgb.DMatrix('DATASET_agaricus_train.txt')
+    data_test = xgb.DMatrix('DATASET_agaricus_test.txt')
     print('data_train= ',data_train)
     print('type(data_train)= ', type(data_train))
 

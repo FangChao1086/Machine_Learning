@@ -1,11 +1,32 @@
 # /usr/bin/python
-# -*- encoding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
 import xgboost as xgb
 import numpy as np
-from sklearn.model_selection import train_test_split   # cross_validation
+import scipy.sparse
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import StandardScaler
+
+
+def read_data(path):
+    y = []
+    row = []
+    col = []
+    values = []
+    r = 0       # 首行
+    for d in open(path):
+        d = d.strip().split()      # 以空格分开
+        y.append(int(d[0]))
+        d = d[1:]
+        for c in d:
+            key, value = c.split(':')
+            row.append(r)
+            col.append(int(key))
+            values.append(float(value))
+        r += 1
+    x = scipy.sparse.csr_matrix((values, (row, col))).toarray()
+    y = np.array(y)
+    return x, y
 
 
 def show_accuracy(a, b, tip):
@@ -14,11 +35,9 @@ def show_accuracy(a, b, tip):
     print(tip + '正确率：\t', float(acc.sum()) / a.size)
 
 
-if __name__ == "__main__":
-    data = np.loadtxt('14.wine.data', dtype=float, delimiter=',')
-    y, x = np.split(data, (1,), axis=1)
-    # x = StandardScaler().fit_transform(x)
-    x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=1, test_size=0.5)
+if __name__ == '__main__':
+    x, y = read_data('DATASET_agaricus_train.txt')
+    x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=1, train_size=0.6)
 
     # Logistic回归
     lr = LogisticRegression(penalty='l2')
