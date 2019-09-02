@@ -1,3 +1,4 @@
+<span id="re_"></span>
 # A_C、机器学习实践
 * [数据集](#数据集)
   * [load_breast_cancer](#load_breast_cancer)
@@ -8,11 +9,8 @@
     * [年龄_随机森林预测](#年龄_随机森林预测)
   * [数据划分_shuffle](#数据划分_shuffle)
   * [类别标签转换_one_hot](#类别标签转换_one_hot)  
-<span id="re_模型保存与加载"></span>
 * [模型保存与加载](#模型保存与加载)
-<span id="re_Regression"></span>
 * [Regression](#Regression)
-<span id="re_SVM"></span>
 * [SVM](#SVM)
 * [Decision_Trees](#Decision_Trees)
   * [DecisionTreeClassifier](#DecisionTreeClassifier)
@@ -97,7 +95,7 @@ y_train = np_utils.to_categorical(y_train, 10)  # y_train:(6000,10)
 ```
 
 <span id="模型保存与加载"></span>
-## [模型保存与加载](#re_模型保存与加载)
+## [模型保存与加载](#re_)
 ```python
 from sklearn.externals import joblib
 
@@ -111,7 +109,7 @@ gbr = joblib.load('train_model.m')
 ```
 
 <span id="Regression"></span>
-## [Regression](#re_Regression)  
+## [Regression](#re_)  
 [链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Regression)  
 [链接：Logistic Regression底层实现_手写数字0-1二分类](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/Regression/Logistic_Regression/底层实现_手写数字0-1二分类.py)  
 ### 回归
@@ -184,7 +182,7 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
 ```
 
 <span id="SVM"></span>
-## [SVM](#re_SVM)
+## [SVM](#re_)
 [链接：相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/SVM)  
 
 <span id="Decision_Trees"></span>
