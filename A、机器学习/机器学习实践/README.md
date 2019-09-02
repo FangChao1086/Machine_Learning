@@ -202,8 +202,8 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
  ![树的构造](https://i.ibb.co/RvNhfWy/image.png)
 
 <span id="RandomForest"></span>
-## RandomForest  
-[链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/RandomForest)  
+## [RandomForest](#re_)  
+[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/RandomForest)  
 ### 分类
 #### RandomForestClassifier  
 ```python
