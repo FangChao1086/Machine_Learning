@@ -12,11 +12,6 @@
 * [模型保存与加载](#模型保存与加载)
 <span id="re_Regression"></span>
 * [Regression](#Regression)
-  * [回归](#回归)  
-    * [LinearRegression](#LinearRegression)
-    * [Lasso/Ridge--GridSearchCV](#Lasso)
-  * [分类](#分类)  
-    * [LogisticRegression--Pipeline](#LogisticRegression)
 * [SVM](#SVM)
 * [Decision_Trees](#Decision_Trees)
   * [DecisionTreeClassifier](#DecisionTreeClassifier)
@@ -116,12 +111,11 @@ gbr = joblib.load('train_model.m')
 
 <span id="Regression"></span>
 ## [Regression](#re_Regression)  
-<span id="回归"></span>
 [链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Regression)  
 [链接：Logistic Regression底层实现_手写数字0-1二分类](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/Regression/Logistic_Regression/底层实现_手写数字0-1二分类.py)  
-## 回归
+### 回归
 <span id="LinearRegression"></span>
-### LinearRegression
+#### LinearRegression
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -140,8 +134,7 @@ y_hat = lin_reg.predict(x_test)
 mse_loss = mean_squared_error(y_test, y_hat)
 print('mse:', mse_loss)
 ```
-<span id="Lasso"></span>
-### Lasso/Ridge--GridSearchCV
+#### Lasso/Ridge--GridSearchCV
 ```python
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import Lasso, Ridge
@@ -162,10 +155,8 @@ y_hat = lasso_model.predict(x_test)
 r2 = r2_score(y_test, y_hat)
 print("r2_score:", r2)
 ```
-<span id="分类"></span>
-## 分类
-<span id="LogisticRegression"></span>
-### LogisticRegression--Pipeline
+### 分类
+#### LogisticRegression--Pipeline
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -193,7 +184,7 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
 
 <span id="SVM"></span>
 ## SVM
-[链接：详细代码](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/SVM/linear_svm.py)  
+[链接：相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/SVM)  
 
 <span id="Decision_Trees"></span>
 ## Decision_Trees
