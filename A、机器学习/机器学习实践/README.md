@@ -117,7 +117,7 @@ gbr = joblib.load('train_model.m')
 ## regression  
 <span id="回归"></span>
 [链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Regression)  
-[链接：logistic regression底层实现_用于0,1手写数字识别二分类](https://github.com/FangChao1086/Machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/logistic%20regression%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0/logistic%20regression.py)  
+[链接：Logistic Regression底层实现_手写数字0-1二分类](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/Logistic_Regression/底层实现_手写数字0-1二分类.py)  
 ## 回归
 <span id="LinearRegression"></span>
 ### LinearRegression
