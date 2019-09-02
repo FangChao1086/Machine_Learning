@@ -14,8 +14,7 @@
 * [Decision_Tree](#Decision_Tree)
 * [RandomForest](#RandomForest)
 * [GBDT](#GBDT)
-* [XGBoost](#XGBoost)
-* [GBDT(梯度提升树简易教程)](#GBDT(梯度提升树简易教程))
+* [XGBOOST](#XGBOOST)
 * [聚类](#聚类)
   * [KMeans_二分KMeans](#KMeans_二分KMeans)
 * [PCA](#PCA)
@@ -322,9 +321,18 @@ prediction_test = cl_model.predict(x_test)
 cm_test = confusion_matrix(y_test, prediction_test)
 print("Confusion_matrix\n train:\n%s\ntest:\n%s" % (cm_train, cm_test))
 ```
+### GBDT(梯度提升树简易教程)
+[参考链接：GBDT(梯度提升树简易教程)](https://github.com/Freemanzxp/GBDT_Simple_Tutorial)  
 
-<span id="XGBoost"></span>  
-## [XGBoost](#re_)
+ 回归  
+ 二分类   
+ 多分类   
+ 可视化   
+#### 结果：
+![GBDT-regression](https://i.ibb.co/3SLfzR7/GBDT-regression.png)  
+
+<span id="XGBOOST"></span>  
+## [XGBOOST](#re_)
 [链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/XGBOOST)
 ```python
 import xgboost as xgb
@@ -342,18 +350,6 @@ bst = xgb.train(param, data_train, num_boost_round=4, evals=watch_list)
 # 预测
 y_hat = bst.predict(data_test)
 ```
-
-<span id="GBDT(梯度提升树简易教程)"></span>
-## GBDT(梯度提升树简易教程)
-[参考链接：GBDT(梯度提升树简易教程)](https://github.com/Freemanzxp/GBDT_Simple_Tutorial)  
-
- 回归  
- 二分类  
- 多分类  
- 可视化  
- 
-### 结果：
-![GBDT-regression](https://i.ibb.co/3SLfzR7/GBDT-regression.png)  
 
 <span id="聚类"></span>
 ## 聚类
