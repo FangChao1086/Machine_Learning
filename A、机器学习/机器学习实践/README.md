@@ -12,11 +12,8 @@
 * [模型保存与加载](#模型保存与加载)
 * [Regression](#Regression)
 * [SVM](#SVM)
-* [Decision_Trees](#Decision_Trees)
-  * [DecisionTreeClassifier](#DecisionTreeClassifier)
+* [Decision_Tree](#Decision_Tree)
 * [RandomForest](#RandomForest)
-  * [分类](#分类_R)  
-    * [RandomForestClassifier](#RandomForestClassifier)
 * [GBDT](#GBDT)
   * [回归](#回归_GBDT)
     * [GradientBoostingRegressor](#GradientBoostingRegressor)
@@ -185,12 +182,11 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
 ## [SVM](#re_)
 [链接：相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/SVM)  
 
-<span id="Decision_Trees"></span>
-## Decision_Trees
-## 分类
-<span id="DecisionTreeClassifier"><span>
-### DecisionTreeClassifier
-[链接：决策树代码（包含树的构造）](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/decision_tree/decision_tree.py)  
+<span id="Decision_Tree"></span>
+## [Decision_Tree](#re_)
+### 分类
+#### DecisionTreeClassifier
+[链接：决策树代码（包含树的构造）](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/RandomForest/decision_tree/decision_tree.py)  
 1    | low       | sunny     | yes       | yes       
 2    | high      | sunny     | yes       | no        
 3    | med       | cloudy    | yes       | no        
@@ -207,11 +203,9 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
 
 <span id="RandomForest"></span>
 ## RandomForest  
-[链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/RandomForest)  
-<span id="分类_R"><span>
-## 分类
-<span id="RandomForestClassifier"></span>  
-### RandomForestClassifier  
+[链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/RandomForest)  
+### 分类
+#### RandomForestClassifier  
 ```python
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
