@@ -46,7 +46,7 @@
 <span id="随机梯度下降的优化算法"></span>
 ### 随机梯度下降的优化算法
 [视频和pdf介绍](https://ask.julyedu.com/question/7913)
-* 动量法
+* 动量法(Momentum)
   * 每次吸收上一部分更新的余势  
   $$v_{i}=\gamma v_{i-1}+\eta \nabla_{\theta} L(\theta)$$  
   $$\theta_{i}=\theta_{i-1}-v_{i}$$  
@@ -67,7 +67,7 @@
   ![Adadelta1](https://i.ibb.co/HF28PgZ/Adadelta1.png)
   * 为了解决梯度与参数的单位不匹配的问题，使用参数更新的移动平均来取代学习率  
   ![Adadelta2](https://i.ibb.co/rvcDkZ6/Adadelta2.png)
-* Adam（结合了动量法与Adadelta的算法）
+* Adam（RMSProp(Advanced Adagrad) + Momentum）
   * 一阶矩（梯度自身的求和）：动量
   * 二阶矩（梯度的平方和）：自动衰减学习率  
   ![Adam](https://i.ibb.co/6sNT1w5/Adam.png)
