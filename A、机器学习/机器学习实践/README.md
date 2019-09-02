@@ -12,6 +12,7 @@
 * [模型保存与加载](#模型保存与加载)
 <span id="re_Regression"></span>
 * [Regression](#Regression)
+<span id="re_SVM"></span>
 * [SVM](#SVM)
 * [Decision_Trees](#Decision_Trees)
   * [DecisionTreeClassifier](#DecisionTreeClassifier)
@@ -183,7 +184,7 @@ fpr, tpr, threshold = roc_curve(y_test, y_hat)
 ```
 
 <span id="SVM"></span>
-## SVM
+## [SVM](#re_SVM)
 [链接：相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/SVM)  
 
 <span id="Decision_Trees"></span>
