@@ -83,13 +83,13 @@
 
 ![LSTM](https://i.ibb.co/vs4x5sn/LSTM.png)  
 ### LSTM分解步骤
-* 遗忘门：f_t;                    **决定丢弃信息**  
+* 遗忘门：`f_t`；                     **决定丢弃信息**  
 ![LSTM_1](https://i.ibb.co/GC8Dhjt/LSTM-1.png)  
-* 输入门：i_t,候选记忆单元：~C_t；  **确定更新信息**  
+* 输入门：`i_t`,候选记忆单元：`~C_t`；  **确定更新信息**  
 ![LSTM_2](https://i.ibb.co/gTkR7tY/LSTM-2.png)  
-* 当前时刻记忆单元C_t；            **更新细胞状态**  
+* 当前时刻记忆单元`C_t`；            **更新细胞状态**  
 ![LSTM_3](https://i.ibb.co/GtYBZKD/LSTM-3.png)  
-* 输出门：o_t,输出：h_t  
+* 输出门：`o_t`,输出：`h_t`  
 ![LSTM_4](https://i.ibb.co/72XpDfy/LSTM-4.png)  
 
 <span id="GRU"></span>
