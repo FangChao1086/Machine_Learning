@@ -325,7 +325,7 @@ print("Confusion_matrix\n train:\n%s\ntest:\n%s" % (cm_train, cm_test))
 ```
 
 <span id="XGBoost"></span>  
-## [XGBoost](#re_X)
+## [XGBoost](#re_)
 [链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/XGBOOST)
 ```python
 import xgboost as xgb
