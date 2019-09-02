@@ -428,14 +428,13 @@ if __name__ == '__main__':
 ```
 
 <span id="交叉验证"></span>
-## 交叉验证
+## [交叉验证](#re_)
 [链接：交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/通用知识点.md#交叉验证)  
-[链接：k_fold代码](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81/k_fold.py)  
-[链接：leave_one_out, leave_p_out代码](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81/leave_p_out.py)  
+[链接：相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/交叉验证)  
 
 <span id="matplotlib"></span>
-## matplotlib
-[链接：速查表_matplotlib](https://github.com/FangChao1086/machine_learning/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E9%80%9F%E6%9F%A5%E8%A1%A8/matplotlib/matplotlib.pdf)  
+## [matplotlib](#re_)
+[链接：速查表_matplotlib](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/速查表/matplotlib/matplotlib.pdf)  
 [参考链接：matplotlib的线条及颜色控制](https://www.cnblogs.com/darkknightzh/p/6117528.html)  
 ### 中文显示
 ```python
@@ -501,7 +500,7 @@ plt.show()
 ```
 
 <span id="python日期处理datetime"></span>
-## python日期处理datetime
+## [python日期处理datetime](#re_)
 ```python
 # 时间差
 import datetime as dt
