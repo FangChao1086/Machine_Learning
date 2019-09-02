@@ -10,7 +10,7 @@
   * [类别标签转换_one_hot](#类别标签转换_one_hot)  
 <span id="re_模型保存与加载"></span>
 * [模型保存与加载](#模型保存与加载)
-* [regression](#regression)
+* [Regression](#Regression)
   * [回归](#回归)  
     * [LinearRegression](#LinearRegression)
     * [Lasso/Ridge--GridSearchCV](#Lasso)
@@ -113,11 +113,11 @@ gbr = joblib.load('train_model.m')
 # prediction_text = gbr.prediction(x_test)
 ```
 
-<span id="regression"></span>
-## regression  
+<span id="Regression"></span>
+## Regression  
 <span id="回归"></span>
-[链接：详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Regression)  
-[链接：Logistic Regression底层实现_手写数字0-1二分类](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/Logistic_Regression/底层实现_手写数字0-1二分类.py)  
+[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Regression)  
+[链接：Logistic Regression底层实现_手写数字0-1二分类](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/Regression/Logistic_Regression/底层实现_手写数字0-1二分类.py)  
 ## 回归
 <span id="LinearRegression"></span>
 ### LinearRegression
