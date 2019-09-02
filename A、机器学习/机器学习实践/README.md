@@ -2,7 +2,6 @@
 # A_C、机器学习实践
 * [数据集](#数据集)
   * [load_breast_cancer](#load_breast_cancer)
-<span id="re_数据处理"></span>
 * [数据处理](#数据处理)
   * [性别_转换成数值](#性别_转换成数值)
   * [缺失值填充](#缺失值填充)
@@ -25,9 +24,9 @@
 * [matplotlib](#matplotlib)
 * [python日期处理datetime](#python日期处理datetime)
 <span id="数据集"></span>
-## 数据集
+## [数据集](#re_)
 <span id="load_breast_cancer"></span>
-## load_breast_cancer
+### load_breast_cancer
 ```python
 from sklearn.datasets import load_breast_cancer
 
@@ -37,16 +36,16 @@ target = data_cancer.target  # shape:569,
 ```
 
 <span id="数据处理"></span>
-## [数据处理](#re_数据处理)
+## [数据处理](#re_)
 <span id="性别"></span>
-## 性别_转换成数值
+### 性别_转换成数值
 ```python
 data['Sex'] = data['Sex'].map({'female': 0, 'male': 1}).astype(int)
 ```
 <span id="缺失值填充"></span>
-## 缺失值填充
+### 缺失值填充
 <span id="年龄_随机森林预测"></span>
-### 年龄_随机森林预测
+#### 年龄_随机森林预测
 ```python
 from sklearn.ensemble import RandomForestRegressor
 
@@ -63,7 +62,7 @@ data.loc[(data.Age.isnull()), 'Age'] = age_hat
 ```
 
 <span id="数据划分_shuffle"></span>
-## 数据划分_shuffle
+### 数据划分_shuffle
 ```python
 import random
 
@@ -76,7 +75,7 @@ label = label[index]
 (y_train, y_val) = (label[0:30000], label[30000:])
 ```
 <span id="类别标签转换_one_hot"></span>
-## 类别标签转换_one_hot
+### 类别标签转换_one_hot
 ```python
 from keras.datasets import mnist
 from keras.utils import np_utils
@@ -326,7 +325,7 @@ print("Confusion_matrix\n train:\n%s\ntest:\n%s" % (cm_train, cm_test))
 
 <span id="XGBoost"></span>  
 ## [XGBoost](#re_)
-[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/XGBOOST)
+[链接：相关详细代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/XGBOOST)
 ```python
 import xgboost as xgb
 
