@@ -37,13 +37,13 @@ def sigmoid(X):
 
 # 梯度下降,求回归系数
 def gradeAscent(dataArray, labelArray, alpha=0.01, iter=100):
-    dataMat = np.mat(dataArray)
-    labelMat = np.mat(labelArray)
+    dataMat = np.mat(dataArray)  # size:m*n
+    labelMat = np.mat(labelArray)  # size:m*1
     m, n = dataMat.shape
     weight = np.ones((n, 1))
     for i in range(iter):
         h = sigmoid(dataMat * weight)
-        error = labelMat - h
+        error = labelMat - h  # size:m*1
         weight = weight + alpha * dataMat.transpose() * error
     return weight
 
@@ -52,7 +52,7 @@ def gradeAscent(dataArray, labelArray, alpha=0.01, iter=100):
 def classify(dataArray, labelArray, weight):
     dataMat = np.mat(dataArray)
     labelMat = np.mat(labelArray)
-    h = sigmoid(dataMat * weight)
+    h = sigmoid(dataMat * weight)  # size:m*1
     m = len(h)
     error = 0.0
     for i in range(m):
