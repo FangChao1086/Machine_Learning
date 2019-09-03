@@ -33,8 +33,7 @@ class KMeans(object):
         self.labels = None  # 点所属的簇
         self.sse = None  # 欧式距离的平方
 
-        # 计算两点的欧式距离
-
+    # 计算两点的欧式距离
     def _distEclud(self, vecA, vecB):
         return np.linalg.norm(vecA - vecB)
 
@@ -183,7 +182,7 @@ class biKMeans(object):
 
 if __name__ == '__main__':
     # 加载数据 x_data:(1000,2)  y_label:(1000,)
-    x_data, y_label = pickle.load(open('data.pkl', 'rb'), encoding='iso-8859-1')
+    x_data, y_label = pickle.load(open('DATASET_data.pkl', 'rb'), encoding='iso-8859-1')
 
     for max_iter in range(6):
         plt.figure(max_iter + 1)
