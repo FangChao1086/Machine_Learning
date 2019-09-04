@@ -47,8 +47,7 @@ $$\sigma(x)=\frac{1}{1+e^{-x}}$$
 loss函数：  
 $$-\frac{1}{n} \sum_{i=1}^{n}\left(y_{i} \log \hat{y_i}+\left(1-y_{i}\right) \log \left(1-\hat{y_i}\right)\right)$$  
 [参考链接：逻辑回归的推导](https://www.cnblogs.com/lxs0731/p/8573044.html)   
-[参考链接：逻辑回归实现多分类](https://blog.csdn.net/sinat_36811967/article/details/84378246)  
-### 逻辑回归实现多分类  
+### [逻辑回归实现多分类](https://blog.csdn.net/sinat_36811967/article/details/84378246)   
 * **one-vs-one**(OVO)
   * n(n-1)/2个分类器
   * 每个分类器预测类别，投票得到最终类别
