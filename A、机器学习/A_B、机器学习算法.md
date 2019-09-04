@@ -515,10 +515,9 @@ $$f(x)=f_{M}(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$
 </details>
 
 <span id="聚类"></span>
-## 聚类
+## [聚类](#re_)
 聚类算法：原型聚类（kmeans）、学习向量量化（Learning Vector Quatization）、高斯混合聚类（Mixture-of-Gaussian）、密度聚类（DBSCAN）、层次聚类（AGNES）
-### KMeans
-[参考链接：KMeans聚类算法原理总结](https://mp.weixin.qq.com/s/2o9JapW9X_Yx9TwHRE0QJA)  
+### [KMeans聚类算法原理总结](https://mp.weixin.qq.com/s/2o9JapW9X_Yx9TwHRE0QJA)  
 * 普通KMeans  
   * **<details><summary>k-means步骤</summary>**
  
@@ -566,8 +565,7 @@ $$f(x)=f_{M}(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$
 * 数据维数过大，先考虑PCA降维
 </details>
 
-#### K-means聚类最优k值的选取
-[参考链接：K-means聚类最优k值的方法](https://blog.csdn.net/qq_15738501/article/details/79036255)    
+#### [K-means聚类选取最优k值的方法](https://blog.csdn.net/qq_15738501/article/details/79036255)    
 * 手肘法
   * 思想：利用SSE;**当k小于真实聚类数时，由于k的增大会大幅增加每个簇的聚合程度，故SSE的下降幅度会很大，而当k到达真实聚类数时，再增加k所得到的聚合程度回报会迅速变小，所以SSE的下降幅度会骤减**，然后随着k值的继续增大而趋于平缓，也就是说SSE和k的关系图是一个手肘的形状，而**这个肘部对应的k值就是数据的真实聚类数**
 * 轮廓系数法
@@ -582,7 +580,7 @@ $$f(x)=f_{M}(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$
 * 基于密度的聚类算法
 
 <span id="隐马尔可夫模型HMM"></span>
-## 隐马尔可夫模型HMM
+## [隐马尔可夫模型HMM](#re_)
 **生成模型**  
 隐藏的马尔可夫链随机生成**状态序列**，每个状态随机生成一个观测，由此产生**观测序列**  
 * 初始状态概率向量pai
@@ -604,15 +602,15 @@ $$f(x)=f_{M}(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$
   * 已知观测序列Y，求解使观测序列概率最大的模型参数（包括隐状态，隐状态之间的转移概率，隐状态到观测状态的概率分布）
 
 <span id="条件随机场CRF"></span>
-## 条件随机场CRF
+## [条件随机场CRF](#re_)
 **判别模型**  
 
 <span id="EM算法"></span>
-## EM算法
+## [EM算法](#re_)
 * 解决隐含变量优化问题的有效方法
 * jensen不等式确定下界
 
 <span id="参考"></span>
-## 参考
+## [参考](#re_)
 ① https://github.com/datawhalechina/Daily-interview  
 ② https://www.nowcoder.com/tutorial/95
