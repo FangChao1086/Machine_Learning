@@ -3,7 +3,6 @@
 * [KNN](#KNN)
 * [朴素贝叶斯](#朴素贝叶斯)
 * [逻辑斯蒂回归](#逻辑斯蒂回归)
-  * [逻辑回归实现多分类](#逻辑回归实现多分类)
 * [支持向量机SVM](#支持向量机SVM)
   * [手撕SVM](#手撕SVM)
   * [SVM损失函数](#SVM损失函数)
@@ -69,7 +68,7 @@ $$-\frac{1}{n} \sum_{i=1}^{n}\left(y_{i} \log \hat{y_i}+\left(1-y_{i}\right) \lo
   * 对异常值有很好的稳定性
 
 <span id="支持向量机SVM"></span>
-## 支持向量机SVM
+## [支持向量机SVM](#re_)
 <span id="手撕SVM"></span>
 [参考链接：手撕SVM](https://blog.csdn.net/Dominic_S/article/details/83002153)  
 **寻找最优超平面在空间中分割数据**；  分割超平面满足的条件：离其最近的点到其的距离最大化  
