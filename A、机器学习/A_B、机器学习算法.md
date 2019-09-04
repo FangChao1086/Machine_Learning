@@ -203,7 +203,7 @@ $$s.t.\ \ \ \ \quad \sum_{i=1}^{N} \alpha_{i} y_{i}=0, \alpha_{i} \geq 0, \quad 
 [参考链接：SVM实现多分类](https://www.cnblogs.com/CheeseZH/p/5265959.html)  
 
 <span id="决策树"></span>
-## 决策树
+## [决策树](#re_)
 ### 特征选择
 * 分类树
   * ID3决策树：优先选择**信息增益大**的属性（偏向于特征取值多的特征，而信息增益比则抵消了特征变量的复杂程度）
@@ -234,7 +234,7 @@ $$s.t.\ \ \ \ \quad \sum_{i=1}^{N} \alpha_{i} y_{i}=0, \alpha_{i} \geq 0, \quad 
 </details>
 
 <span id="集成学习"></span>
-## 集成学习
+## [集成学习](#re_)
 * 基本思想：由多个学习器组合成一个性能更好的学习器
 
 <span id="bagging和boosting"></span>
