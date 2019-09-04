@@ -346,9 +346,9 @@ $$G(x)=sign\left(\sum_{t=1}^{T}\alpha_tG_t\left(x\right)\right)$$
 #### 加法模型
 * 加法模型：  
 $$f(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$  
-  * 基函数：`b(x;γ_m)`
-  * 基函数的参数：`γ`
-  * 基函数的系数：`β`
+  * 基函数：$b\left(x ; \gamma_{m}\right)$
+  * 基函数的参数：$\gamma_{m}$
+  * 基函数的系数：$\beta_{m}$
 * 在给定训练数据和损失函数```L(y,f(x))```的情况下，学习加法模型相当于损失函数的最小化问题  
 $$\min_{\beta_{m},\gamma_{m}} \sum_{i=1}^{N} L\left(y_{i},\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)\right)$$  
 #### 算法描述
@@ -356,15 +356,15 @@ $$\min_{\beta_{m},\gamma_{m}} \sum_{i=1}^{N} L\left(y_{i},\sum_{m=1}^{M} \beta_{
 * 输入：训练集`T={(x1,y1),..,(xN,yN)}`，损失函数`L(y,f(x))`，基函数集`{b(x;γ)}`
 * 输出：加法模型`f(x)`  
 
-1. 初始化`f_0(x)=0`    
-2. 对`m=1,2,..,M`
-  * 极小化损失函数，得到`(β_m,γ_m)`  
+1. 初始化$f_0(x)=0$    
+2. 对$m=1,2,..,M$
+  * 极小化损失函数，得到$(\beta_m,\gamma_m)$  
   $$\left(\beta_{m},\gamma_{m}\right)=\arg \min_{\beta, \gamma}\sum_{i=1}^{N} L\left(y_{i},f_{m-1}\left(x_{i}\right)+\beta b\left(x_{i};\gamma\right)\right)$$  
-  * 更新模型 `f_m(x)`  
+  * 更新模型 $f_m(x)$  
   $$f_{m}(x)=f_{m-1}(x)+\beta b(x ; \gamma)$$  
 3. 得到加法模型  
 $$f(x)=f_{M}(x)=\sum_{m=1}^{M} \beta_{m} b\left(x ; \gamma_{m}\right)$$  
-* 前向分步算法将同时求解```m=1,2,..,M```所有参数```(β_m,γ_m)```的问题简化为逐次求解各```(β_m,γ_m)```的优化问题——思想上有点像梯度下降  
+* 前向分步算法将同时求解$m=1,2,..,M$所有参数$(\beta_m,\gamma_m)$的问题简化为逐次求解各$(\beta_m,\gamma_m)$的优化问题——思想上有点像梯度下降  
 #### 前向分步算法与 AdaBoost
 * AdaBoost 算法是前向分步算法的特例。
 * 此时，基函数为基分类器，损失函数为指数函数```L(y,f(x)) = exp(-y*f(x))```
