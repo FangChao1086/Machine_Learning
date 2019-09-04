@@ -4,10 +4,6 @@
 * [朴素贝叶斯](#朴素贝叶斯)
 * [逻辑斯蒂回归](#逻辑斯蒂回归)
 * [支持向量机SVM](#支持向量机SVM)
-  * [手撕SVM](#手撕SVM)
-  * [SVM损失函数](#SVM损失函数)
-  * [核函数](#核函数)
-  * [SVM实现多分类](#SVM实现多分类)
 * [决策树](#决策树)
 * [集成学习](#集成学习)
   * [bagging和boosting](#bagging和boosting)
@@ -69,7 +65,6 @@ $$-\frac{1}{n} \sum_{i=1}^{n}\left(y_{i} \log \hat{y_i}+\left(1-y_{i}\right) \lo
 
 <span id="支持向量机SVM"></span>
 ## [支持向量机SVM](#re_)
-<span id="手撕SVM"></span>
 [参考链接：手撕SVM](https://blog.csdn.net/Dominic_S/article/details/83002153)  
 **寻找最优超平面在空间中分割数据**；  分割超平面满足的条件：离其最近的点到其的距离最大化  
 **支持向量**：训练数据集中与分离超平面距离最近的样本点的实例  
@@ -169,12 +164,10 @@ $$s.t.\ \ \ \ \quad \sum_{i=1}^{N} \alpha_{i} y_{i}=0, \alpha_{i} \geq 0, \quad 
 **合页损失（hinge损失）**  
 * 当样本被正确分类且函数间隔大于1时，合页损失才是0，否则损失是1-y(wx+b)。
 * 合页损失函数**不仅要正确分类**，而且**确信度足够高时损失才是0**。也就是说，合页损失函数对学习有更高的要求。
-<span id="SVM损失函数"></span>
 ### SVM损失函数
 * 合页损失函数加上正则化项
   $$\sum_{i}^{N}\left[1-y_{i}\left(w \cdot x_{i}+b\right)\right]_ {+ }+\lambda\|\|w\|\|^{2}$$  
 
-<span id="核函数"></span>
 ### 核函数
 **核函数的种类**
 * **线性核函数**
@@ -206,8 +199,6 @@ $$s.t.\ \ \ \ \quad \sum_{i=1}^{N} \alpha_{i} y_{i}=0, \alpha_{i} \geq 0, \quad 
 * SVM
   * 非参数模型，损失函数为hinge损失
   * 只考虑与分类最相关的少数支持向量
-
-<span id="SVM实现多分类"></span>
 ### SVM实现多分类
 [参考链接：SVM实现多分类](https://www.cnblogs.com/CheeseZH/p/5265959.html)  
 
