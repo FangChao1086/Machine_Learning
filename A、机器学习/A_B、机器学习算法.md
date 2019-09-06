@@ -67,7 +67,7 @@ $$-\frac{1}{n} \sum_{i=1}^{n}\left(y_{i} \log \hat{y_i}+\left(1-y_{i}\right) \lo
 **寻找最优超平面在空间中分割数据**；  分割超平面满足的条件：离其最近的点到其的距离最大化  
 **支持向量**：训练数据集中与分离超平面距离最近的样本点的实例  
 **核函数**  
-<div align=center><img width="500" height="100" src="https://github.com/FangChao1086/machine_learning/blob/master/依赖文件/核函数.jpg"/></div>  
+<div align=center>![核函数](https://github.com/FangChao1086/machine_learning/blob/master/依赖文件/核函数.jpg)
 
 **<details><summary>支持向量机的分类</summary>**
 
