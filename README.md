@@ -19,3 +19,7 @@
   * [计算机视觉实践](https://github.com/FangChao1086/Machine_learning/blob/master/D、计算机视觉/计算机视觉实践.md)
 * [自然语言处理](https://github.com/FangChao1086/Machine_learning/tree/master/D、自然语言处理NLP)
   * [NLP知识点](https://github.com/FangChao1086/Machine_learning/blob/master/D、自然语言处理NLP/NLP知识点.md)
+
+
+### 注意：
+*  关于看不到文中公式的解决办法：chrome浏览器安装插件：MathJax Plugin for Github[安装方法](https://jingyan.baidu.com/article/915fc41454894451394b2092.html)
