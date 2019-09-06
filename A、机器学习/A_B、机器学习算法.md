@@ -68,6 +68,7 @@ $$-\frac{1}{n} \sum_{i=1}^{n}\left(y_{i} \log \hat{y_i}+\left(1-y_{i}\right) \lo
 **支持向量**：训练数据集中与分离超平面距离最近的样本点的实例  
 **核函数**  
 <div align=center><img width="500" height="100" src="https://github.com/FangChao1086/machine_learning/blob/master/依赖文件/核函数.jpg"/></div>  
+
 **<details><summary>支持向量机的分类</summary>**
 
 * 线性可分支持向量机
