@@ -341,7 +341,8 @@ y_hat = bst.predict(data_test)
 
 <span id="KMeans"></span>
 ## [KMeans](#re_)
-[KMeans知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#聚类)[KMeans代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Kmeans)  
+[KMeans知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#聚类)  
+[KMeans代码](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习/机器学习实践/Kmeans)  
 
 <span id="PCA"></span>
 ## [PCA](#re_)  
@@ -418,7 +419,8 @@ if __name__ == '__main__':
 
 <span id="交叉验证"></span>
 ## [交叉验证](#re_)
-[交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#交叉验证)[相关详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/交叉验证)  
+[交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#交叉验证)    
+[详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/交叉验证)  
 
 <span id="matplotlib"></span>
 ## [matplotlib](#re_)
