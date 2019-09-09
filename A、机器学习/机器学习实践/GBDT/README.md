@@ -8,4 +8,4 @@
   
 ## 分类
 * 鸢尾花数据分类
-  * [GradientBoostingClassifier_iris](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/GBDT/GradientBoostingClassifier_iris.py)
+  * [GradientBoostingClassifier_iris](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践/GBDT/3.GradientBoostingClassifier_iris.py)
