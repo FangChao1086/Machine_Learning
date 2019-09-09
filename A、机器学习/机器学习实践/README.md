@@ -15,7 +15,7 @@
 * [交叉验证](#交叉验证)
 * [链接：pandas](https://github.com/FangChao1086/machine_learning/blob/master/机器学习/pandas.md)
 * [matplotlib](#matplotlib)
-* [python日期处理datetime](#python日期处理datetime)
+
 <span id="数据集"></span>
 ## [数据集](#re_)
 <span id="load_breast_cancer"></span>
@@ -487,18 +487,4 @@ plt.grid()  # 显示网络
 plt.title(u'model', fontsize=17)
 plt.savefig('model.png')
 plt.show()
-```
-
-<span id="python日期处理datetime"></span>
-## [python日期处理datetime](#re_)
-```python
-# 时间差
-import datetime as dt
-
-date_received = '20120301'
-d = '20120305'
-this_gap = (
-        dt.datetime(int(d[0:4]), int(d[4:6]), int(d[6:8])) -
-        dt.datetime(int(date_received[0:4]), int(date_received[4:6]), int(date_received[6:8]))).days
-print('时间差this_gap:', this_gap)
 ```
