@@ -419,7 +419,7 @@ if __name__ == '__main__':
 
 <span id="交叉验证"></span>
 ## [交叉验证](#re_)
-[交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#交叉验证)    
+[交叉验证知识点](https://github.com/FangChao1086/Machine_learning/blob/master/通用知识点.md#交叉验证)    
 [详细代码](https://github.com/FangChao1086/machine_learning/blob/master/A、机器学习/机器学习实践/交叉验证)  
 
 <span id="matplotlib"></span>
