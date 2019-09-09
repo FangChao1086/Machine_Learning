@@ -346,7 +346,7 @@ y_hat = bst.predict(data_test)
 
 <span id="PCA"></span>
 ## [PCA](#re_)  
-[PCA知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md#降维)  
+[PCA知识点](https://github.com/FangChao1086/Machine_learning/blob/master/通用知识点.md#降维)  
 
 ```python
 '''
