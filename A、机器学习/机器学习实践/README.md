@@ -3,11 +3,6 @@
 * [数据集](#数据集)
   * [load_breast_cancer](#load_breast_cancer)
 * [数据处理](#数据处理)
-  * [性别_转换成数值](#性别_转换成数值)
-  * [缺失值填充](#缺失值填充)
-    * [年龄_随机森林预测](#年龄_随机森林预测)
-  * [数据划分_shuffle](#数据划分_shuffle)
-  * [类别标签转换_one_hot](#类别标签转换_one_hot)  
 * [模型保存与加载](#模型保存与加载)
 * [Regression](#Regression)
 * [SVM](#SVM)
@@ -35,14 +30,11 @@ target = data_cancer.target  # shape:569,
 
 <span id="数据处理"></span>
 ## [数据处理](#re_)
-<span id="性别"></span>
 ### 性别_转换成数值
 ```python
 data['Sex'] = data['Sex'].map({'female': 0, 'male': 1}).astype(int)
 ```
-<span id="缺失值填充"></span>
 ### 缺失值填充
-<span id="年龄_随机森林预测"></span>
 #### 年龄_随机森林预测
 ```python
 from sklearn.ensemble import RandomForestRegressor
@@ -58,8 +50,6 @@ rfr.fit(x, y)
 age_hat = rfr.predict(age_null.values[:, 1:])
 data.loc[(data.Age.isnull()), 'Age'] = age_hat
 ```
-
-<span id="数据划分_shuffle"></span>
 ### 数据划分_shuffle
 ```python
 import random
@@ -72,7 +62,6 @@ label = label[index]
 (x_train, x_val) = (data[0:30000], data[30000:])
 (y_train, y_val) = (label[0:30000], label[30000:])
 ```
-<span id="类别标签转换_one_hot"></span>
 ### 类别标签转换_one_hot
 ```python
 from keras.datasets import mnist
