@@ -13,6 +13,7 @@
 * [jieba分词](#jieba分词)
 * [Seq2Seq](#Seq2Seq)
 * [实现多轮对话](#实现多轮对话)
+* [补充](#补充)
 
 <span id="词袋模型"></span>
 ## 词袋模型
@@ -201,3 +202,7 @@ jieba分词综合了基于字符串匹配的算法和基于统计的算法
 * 根据分类结果不同**匹配不同的库**
 * 然后向用户**返回不同的结果**
 * 根据MDP（**马尔可夫决策过程**）实现多轮对话
+
+<span id="补充"></span>
+## 补充
+* [SQuAD_The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)  
