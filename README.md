@@ -5,7 +5,6 @@
 ## 内容
 * [通用知识点](https://github.com/FangChao1086/machine_learning/blob/master/通用知识点.md)
 * [A、机器学习](https://github.com/FangChao1086/Machine_learning/tree/master/A、机器学习)
-  * [A_A、机器学习知识点](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_A、机器学习知识点.md)
   * [A_B、机器学习算法](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/A_B、机器学习算法.md)
   * [A_C、机器学习实践](https://github.com/FangChao1086/Machine_learning/blob/master/A、机器学习/机器学习实践)
 * [B、深度学习](https://github.com/FangChao1086/Machine_learning/tree/master/B、深度学习)
