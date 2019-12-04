@@ -9,6 +9,7 @@
   * [小批量随机梯度下降](#小批量随机梯度下降) 
 * [LSTM](#LSTM)
 * [GRU](#GRU)
+* [RNN](#RNN)
 * [Attention机制](#Attention机制)
 * [1x1卷积作用](#1x1卷积作用)
 * [Dropout](#Dropout)
@@ -115,6 +116,16 @@
 ## [Attention机制](#re_)
 * 作用：
   * 减少处理高维输入数据的计算负担,结构化的选取输入的子集,从而降低数据的维度。让系统更加容易的找到输入的数据中与当前输出信息相关的有用信息,从而提高输出的质量。帮助类似于decoder这样的模型框架更好的学到多种内容模态之间的相互关系。
+
+<span id="RNN"></span>
+## [RNN](#re_)
+<div align=center><img src="https://github.com/FangChao1086/Machine_Learning/blob/master/依赖文件/RNN.jpg"></div>  
+
+* T时刻，隐藏层神经元的激活值：
+  * $$S_{t}=f\left(U * x_{t}+W * S_{t-1}+b_{1}\right)$$  
+* T时刻，输出层的激活值：			
+  * $$O_{t}=f\left(V * S_{t}+b_{2}\right)$$  
+
 
 <span id="1x1卷积作用"></span>
 ## [1x1卷积作用](#re_)
