@@ -73,7 +73,9 @@
   * 一阶矩（梯度自身的求和）：动量
   * 二阶矩（梯度的平方和）：自动衰减学习率  
   ![Adam](https://i.ibb.co/6sNT1w5/Adam.png)
-  
+<div align=center><img src="https://github.com/FangChao1086/Machine_Learning/blob/master/依赖文件/SGD优化1.png"/></div>  
+<div align=center><img src="https://github.com/FangChao1086/Machine_Learning/blob/master/依赖文件/SGD优化2.png"/></div>  
+
 <span id="小批量随机梯度下降"></span>
 ### 小批量随机梯度下降
 每次梯度计算使用一个小批量样本
